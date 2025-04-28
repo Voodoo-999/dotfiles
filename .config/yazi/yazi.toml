@@ -1,0 +1,9 @@
+
+[manager]
+ratio          = [ 0, 4, 3 ]
+linemode       = "size"
+
+[preview]
+max_width       = 1200
+max_height      = 1000
+

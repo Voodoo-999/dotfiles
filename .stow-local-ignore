@@ -1,0 +1,6 @@
+# all the files stow will ingonre
+.git
+.gitignore
+^/README.*
+# The keyboard layout
+corne
