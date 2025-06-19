@@ -1449,8 +1449,8 @@ map kitty_mod+f6 debug_config
 # for some reason I need to add this line to have a block cursor
 shell_integration no-cursor
 
-cursor_trail 1
+cursor_trail 0
 # BEGIN_KITTY_THEME
-# Catppuccin-Frappe
+# Nordfox
 include current-theme.conf
 # END_KITTY_THEME

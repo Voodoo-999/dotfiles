@@ -30,4 +30,6 @@ vim.keymap.set('n','<leader><leader>l',":set colorcolumn=120<cr>") -- will displ
 vim.keymap.set('n','<leader><leader>x',":source %<cr>") -- resource nvim
 vim.keymap.set("n", "<C-n>", ":bn<cr>", {desc = "[B]uffer [N]ext" })
 vim.keymap.set("n", "<C-p>", ":bp<cr>", {desc = "[B]uffer [P]revious" })
+vim.keymap.set('n','<leader>e',":lua vim.diagnostic.open_float()<cr>") -- open [E]rror
+vim.keymap.set('n','<leader>sf',":%s/") -- send in file
 
