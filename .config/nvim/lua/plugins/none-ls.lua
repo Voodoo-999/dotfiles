@@ -8,13 +8,14 @@ return {
         -- get eccess to the none-ls functions
         local null_ls = require("null-ls")
         -- run the setup function for none-ls to setup our different formatters
+
         null_ls.setup({
             sources = {
-                -- setup lua formatter
-                null_ls.builtins.formatting.stylua,
-                -- setup eslint linter for javascript
-                require("none-ls.diagnostics.eslint_d"),
-                -- setup prettier to format languages that are not lua
+                null_ls.builtins.formatting.stylua, -- Lua formatter
+                --null_ls.builtins.completion.spell,  -- tries auto completion like on phone keyboard
+--                require("none-ls.diagnostics.eslint_d"),
+                --setup asmfmt to format assembly
+                null_ls.builtins.formatting.asmfmt,
                 null_ls.builtins.formatting.prettier,
             },
         })

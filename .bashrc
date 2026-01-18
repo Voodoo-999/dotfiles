@@ -15,8 +15,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 set -o vi
 # check the window size after each command and, if necessary,
@@ -87,11 +87,14 @@ if [ -x /usr/bin/dircolors ]; then
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
-    alias suspend='systemctl suspend'
     alias egrep='egrep --color=auto'
     alias tmux='tmux -u'
     alias tree='cbonsai -il'
     alias brave="flatpak run com.brave.Browser"
+    alias e='exit'
+    alias s='systemctl suspend -i'
+    alias c='clear'
+    alias v='nvim'
 fi
 
 # colored GCC warnings and errors

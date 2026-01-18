@@ -8,15 +8,17 @@ return {
 		priority = 1000,
 		config = function()
 			--vim.cmd.colorscheme("nordfox")
-			vim.cmd.colorscheme("catppuccin-frappe")
+			--vim.cmd.colorscheme("catppuccin-frappe")
+            -- vim.cmd.colorscheme("kanagawa")
 			--vim.g.onedark_config = {
 			--   style = "cool",  -- or "cool", "warm", "darker", etc.
 			--}
-			--vim.cmd.colorscheme("onedark")
+			vim.cmd.colorscheme("onedark")
 			--vim.cmd.colorscheme ("dracula")
 		end,
 	},
 	{
+        "rebelot/kanagawa.nvim",
 		"EdenEast/nightfox.nvim",
 		"yorickpeterse/nvim-grey",
 		"savq/melange-nvim",
