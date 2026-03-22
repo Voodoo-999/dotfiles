@@ -36,6 +36,16 @@ return {
 				})
 				vim.lsp.enable(server)
 			end
+            -- just a setup for tinymist (for typst)
+			vim.lsp.config("tinymist", {
+				capabilities = capabilities,
+				settings = {
+					formatterMode = "typstyle", -- This handles the "ordering" of your code
+					exportPdf = "onSave", -- Useful for Typst workflow
+					semanticTokens = "enable",
+				},
+			})
+			vim.lsp.enable("tinymist")
 
 			-- 2. Special Case: jdtls (Custom CMD)
 			vim.lsp.config("jdtls", {

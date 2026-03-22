@@ -95,6 +95,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias s='systemctl suspend -i'
     alias c='clear'
     alias v='nvim'
+    alias u='sudo apt update && sudo apt full-upgrade -y && flatpak update -y && sudo apt autoremove -y'
 fi
 
 # colored GCC warnings and errors
