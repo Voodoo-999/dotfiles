@@ -9,7 +9,7 @@ return {
 		config = function()
 			--vim.cmd.colorscheme("nordfox")
 			--vim.cmd.colorscheme("catppuccin-frappe")
-            -- vim.cmd.colorscheme("kanagawa")
+			-- vim.cmd.colorscheme("kanagawa")
 			--vim.g.onedark_config = {
 			--   style = "cool",  -- or "cool", "warm", "darker", etc.
 			--}
@@ -18,7 +18,8 @@ return {
 		end,
 	},
 	{
-        "rebelot/kanagawa.nvim",
+		"neanias/everforest-nvim",
+		"rebelot/kanagawa.nvim",
 		"EdenEast/nightfox.nvim",
 		"yorickpeterse/nvim-grey",
 		"savq/melange-nvim",

@@ -1,4 +1,7 @@
 
+-- swap replacing
+vim.opt.swapfile = false
+vim.opt.undofile = true
 -- left column and similar settings
 vim.opt.number = true -- diplay line number
 vim.opt.relativenumber = true
@@ -38,5 +41,3 @@ vim.opt.cursorline = true -- highlight current line
 vim.opt.hlsearch = true -- highlight all matches in search
 vim.opt.ignorecase = true -- ingnore case in search
 vim.opt.smartcase = true -- match case if explicitly stated
-
-

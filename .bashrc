@@ -76,16 +76,23 @@ esac
 # this is the prompt I just copyed, and this is whats in use at the moment
 PS1='\[\e[38;5;81m\]\u@\h \[\e[38;5;214m\]\w\[\e[38;5;254m\]$(__git_ps1 " (%s)")\[\e[0m\]\[\e[38;5;141m\] > \[\e[0m'
 
+xour(){
+    xournalpp "$1"
+}
+
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    alias remove='sudo apt-get --purge remove'
+    alias draw='krita'
+    alias ls='ls --color=auto -l'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
     alias lock='cinnamon-screensaver-command --lock'
-
+    alias pptxpdf='libreoffice --headless --convert-to pdf '
     alias grep='grep --color=auto'
+    alias install='apt update && apt install'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
     alias tmux='tmux -u'
@@ -144,3 +151,9 @@ function y() {
     fi
     rm -f -- "$tmp"
 }
+export GOPATH="/home/natan/.go"
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/natan/.local/bin:$PATH"
+eval "$(zoxide init --cmd cd bash)"

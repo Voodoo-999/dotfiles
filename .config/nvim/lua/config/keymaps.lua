@@ -36,6 +36,22 @@ vim.keymap.set("n", "<leader>n", ":lua vim.diagnostic.goto_next()<cr>") -- go to
 vim.keymap.set("n", "<leader>p", ":lua vim.diagnostic.goto_prev()<cr>") -- go to previous error
 vim.keymap.set("n", "<leader>sf", ":%s/<C-r><C-w>/") -- send in file
 
+-- for gitsigns
+vim.keymap.set("n", "[c", ":Gitsigns next_hunk<cr>") -- go to previous error
+vim.keymap.set("n", "]c", ":Gitsigns prev_hunk<cr>") -- go to previous error
+vim.keymap.set("n", "<leader>hp", ":Gitsigns preview_hunk<cr>") -- go to previous error
+
+-- a keympap that swithces dark mode on/off
+vim.keymap.set("n", "<leader>l", function()
+    if vim.o.background == "dark" then
+        vim.o.background = "light"
+        print("Background: Light")
+    else
+        vim.o.background = "dark"
+        print("Background: Dark")
+    end
+end, { desc = "Toggle background (Light/Dark)" })
+
 vim.keymap.set("n", "<leader>ae", function()
 	vim.diagnostic.setqflist({ open = true })
 end, { desc = "List [A]ll [E]rrors" })
