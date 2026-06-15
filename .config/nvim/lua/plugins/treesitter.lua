@@ -1,10 +1,11 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	dependencies = {
-		"nvim-treesitter/nvim-treesitter-context",
+		"nvim-treesitter/nvim-treesitter-context", -- this is for the function sig to stick
 	},
 	build = ":TSUpdate",
 	config = function()
+        -- this is for the function sig to stick to top
 		require("treesitter-context").setup({
 			enable = true, -- Turn on the plugin
 			max_lines = 4, -- How many lines of nested context to show (e.g. Class > Function > If)
