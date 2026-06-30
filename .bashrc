@@ -84,6 +84,9 @@ xour(){
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias eb='nvim ~/.bashrc'
+    alias sb='source ~/.bashrc'
+    alias tt='ttyper -w 20'
     alias remove='sudo apt-get --purge remove'
     alias draw='krita'
     alias ls='ls --color=auto -l'

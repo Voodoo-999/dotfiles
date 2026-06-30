@@ -28,6 +28,7 @@ return {
 				"ts_ls",
 				"asm_lsp",
 				"lua_ls",
+                "arduino_language_server"
 			}
 
 			for _, server in ipairs(servers) do
